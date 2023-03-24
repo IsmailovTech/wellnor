@@ -49,7 +49,7 @@ const Home = () => {
       <Navbar />
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
-          <img  src={BannerBackground} alt="" />
+          <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading" data-aos="fade-down">
@@ -59,37 +59,44 @@ const Home = () => {
             * Har bir qutiga 30 ta paket Hajmi: 30 ml Hajmi: 250 g (25 ta
             porsiya)
           </p>
-          <button className="secondary-button animate-pulse" onClick={openModal}>
+          <button
+            className="secondary-button animate-pulse"
+            onClick={openModal}
+          >
             Bepul konsultatsiya <FiArrowRight />{' '}
           </button>
+          <Modal
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Example Modal"
+          >
+            <button
+              onClick={closeModal}
+              className="absolute right-3 top-2 bg-gray-400 py-1 px-3 rounded-md text-white"
+            >
+              X
+            </button>
+            <div className="flex flex-col items-center w-[300px] sm:w-[500px] sm:h-[500px]">
+              <h2 className="text-[32px] font-semibold text-center">
+                Bepul konsultatsiya va buyurtma berish
+              </h2>
+              <p className="text-[14px] max-w-[360px] text-center">
+                Quyidagi ma'lumotlarni to'ldiring va mutaxasislarimizdan bepul
+                konsultatsiyaga ega bo'ling:
+              </p>
+              <BuyForm closeModal={closeModal} />
+            </div>
+          </Modal>
         </div>
-        <div className="home-image-section">  ``
+        <div className="home-image-section">
+          {' '}
+          ``
           <img data-aos="fade-down" src={Resveratrol} alt="" />
         </div>
       </div>
 
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <button
-          onClick={closeModal}
-          className="absolute right-3 top-2 bg-gray-400 py-1 px-3 rounded-md text-white"
-        >
-          X
-        </button>
-        <div className="flex flex-col items-center w-[300px] sm:w-[500px] sm:h-[400px]">
-          <h2 className="text-[32px] font-semibold text-center">Bepul konsultatsiya va buyurtma berish</h2>
-          <p className="text-[14px] max-w-[360px] text-center">
-            Quyidagi ma'lumotlarni to'ldiring va mutaxasislarimizdan bepul
-            konsultatsiyaga ega bo'ling:
-          </p>
-          <BuyForm closeModal={closeModal} />
-        </div>
-      </Modal>
       <Toaster position="top-center" reverseOrder={false} />
     </div>
   )
