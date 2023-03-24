@@ -7,28 +7,27 @@ const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      title: "Kafolatlangan",
+      text: "Bizning mahsulotlar 100% tabiiy hamda kafolatlangan",
     },
     {
       image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      title: "Bepul konsultatsiya",
+      text: "Malakali shifokorlarimizdan bepul konsultatsiya ",
     },
     {
       image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      title: "Yetqazib berish xizmati",
+      text: "Bepul hamda tezkor yetqazib berish hizmatimiz mavjud",
     },
   ];
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Work</p>
-        <h1 className="primary-heading">How It Works</h1>
+        <p className="primary-subheading">Kampaniyamiz haqida</p>
+        <h1 className="primary-heading text-center">Wellnor salomatlik markazi</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+         Wellnor - bu hayotni o'zgartirishga, odamlarga yuqori sifatli mahsulotlar va biznes imkoniyatlari orqali yangi darajalar va farovonlikka erishishga qaratilgan milliy to'g'ridan-to'g'ri savdo kompaniyasi. Wellnor kompaniyasining asoschisi va g‘oyaviy ilhomlantiruvchisi yosh tadbirkor Eldor Qurbonovdir. Kompaniya jahon olimlari va BossLondon – England, BonHair, Ulusoy Cosmetics va boshqa elita xalqaro kompaniyalar bilan hamkorlik qiladi.
         </p>
       </div>
       <div className="work-section-bottom">

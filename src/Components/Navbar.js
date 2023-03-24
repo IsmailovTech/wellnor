@@ -29,13 +29,10 @@ const Navbar = () => {
       icon: <InfoIcon />,
     },
     {
-      text: 'Bepul konsultatsiya',
-      icon: <PhoneRoundedIcon />,
-    },
-    {
       text: 'Buyurtma berish',
       icon: <ShoppingCartRoundedIcon />,
     },
+   
   ]
   return (
     <nav>
@@ -50,7 +47,7 @@ const Navbar = () => {
           Buyurtma berish <BsCart2 className="navbar-cart-icon" />
         </a>
 
-        <button className="primary-button">+99897-389-10-98</button>
+        <a href="tel:+998973891098" ><button className="primary-button">+99897-389-10-98</button></a>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -68,9 +65,12 @@ const Navbar = () => {
                 <ListItemButton>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
+                  
                 </ListItemButton>
+                
               </ListItem>
             ))}
+            <a href="tel:+998973891098" ><button className="primary-button flex items-center gap-8 text-gray-800 font-thin"><PhoneRoundedIcon /> +99897-389-10-98</button></a>
           </List>
           <Divider />
         </Box>

@@ -147,8 +147,8 @@ const About = () => {
             >
               X
             </button>
-            <div className="flex flex-col items-center w-[300px] sm:w-[600px] sm:h-[400px]">
-              <h2 className="text-[32px] font-semibold">Batafsil</h2>
+            <div className=" w-[340px] sm:w-[600px] sm:h-[400px]">
+              <h2 className="text-[32px] font-semibold text-center">Batafsil</h2>
               <div className=" hidden sm:block">
                 <iframe
                   width="560"
@@ -162,8 +162,8 @@ const About = () => {
               </div>
               <div className=" block sm:hidden" >
                 <iframe
-                  width="300"
-                  height="200"
+                  width="340"
+                  height="210"
                   src="https://www.youtube.com/embed/bc_SB5cM334"
                   title="YouTube video player"
                   frameborder="0"
