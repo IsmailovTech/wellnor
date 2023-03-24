@@ -64,7 +64,7 @@ const Home = () => {
           </button>
         </div>
         <div className="home-image-section">  ``
-          <img  src={Resveratrol} alt="" />
+          <img data-aos="fade-down" src={Resveratrol} alt="" />
         </div>
       </div>
 
