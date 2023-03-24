@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -32,15 +36,23 @@ nav {
 .navbar-menu-container {
   display: none;
 }
+
+.navbar-links-container{
+  display: flex;
+  align-items: center;
+}
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  
 }
 .primary-button {
-  padding: 0.9rem 1.75rem;
+  padding: 0.5rem 1rem;
   background-color: white;
   outline: none;
   border: none;
@@ -52,6 +64,7 @@ nav {
 }
 .navbar-cart-icon {
   font-size: 1.15rem;
+  margin-left: 4px;
 }
 .primary-button:hover {
   background-color: rgb(234, 234, 234);
@@ -97,7 +110,7 @@ nav {
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #ff005c;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -115,10 +128,10 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: #ff005c;
 }
 .about-section-container {
-  margin-top: 20rem;
+  margin-top: 13rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -141,7 +154,7 @@ nav {
 }
 .primary-subheading {
   font-weight: 700;
-  color: #fe9e0d;
+  color: #481D38;
   font-size: 1.15rem;
 }
 .about-buttons-container {
