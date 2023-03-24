@@ -70,7 +70,7 @@ const Navbar = () => {
                 
               </ListItem>
             ))}
-            <a href="tel:+998973891098" ><button className="primary-button flex items-center gap-8 text-gray-800 font-thin"><PhoneRoundedIcon /> +99897-389-10-98</button></a>
+            <a href="tel:+998952900001" ><button className="primary-button flex items-center gap-8 text-gray-800 font-thin"><PhoneRoundedIcon /> +99895-290-00-01</button></a>
           </List>
           <Divider />
         </Box>
