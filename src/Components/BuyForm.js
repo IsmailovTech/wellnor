@@ -6,7 +6,7 @@ import 'react-phone-number-input/style.css'
 import { toast, Toaster } from 'react-hot-toast'
 
 let token = '5463520222:AAFQgcQ7hyUTAYV3ad0YaGTQ_lGIbRZyyxg'
-let chatId = '636476536'
+let chatId = '-1001936655187'
 
 const env = process.env.NEXT_PUBLIC_TOKEN
 
@@ -33,11 +33,9 @@ const BuyForm = ({ closeModal }) => {
         name: values.name,
         phone: `+998${values.number}`,
       })
-      .then(() => {
-        toast.success('Muvaffaqiyatli yuborildi!')
-      })
+      .then(() => {})
       .catch(() => {
-        toast.success("Jo'natish muvafaqiyatsiz yakunlandi!")
+        toast.success("Malumotlaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz")
       })
       .finally(() => {
         setLoading(false)

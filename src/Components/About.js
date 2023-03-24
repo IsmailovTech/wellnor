@@ -56,17 +56,17 @@ const About = () => {
     setIsOpen2(false)
   }
   return (
-    <div className="about-section-container">
+    <div className="about-section-container" id='product'>
       <div className="about-background-image-container">
         <img src={AboutBackground} alt="" />
       </div>
       <div className="about-section-image-container">
-        <img src={AboutBackgroundImage} alt="" />
+        <img src={AboutBackgroundImage} alt="" data-aos="zoom-out" />
       </div>
       <div className="about-section-text-container">
         <p className="primary-subheading">Mahsulot haqida</p>
-        <h1 className="primary-heading">AVTOZYATLARI</h1>
-        <p className="primary-text">
+        <h1 className="primary-heading" data-aos="fade-down">AVTOZYATLARI</h1>
+        <p className="primary-text" data-aos="fade-right">
           Baolife tarkibida baobab mevasi va boshqa o'simlik tarkibiy qismlari
           mavjud. Baobab mevalari salomatlikni yaxshilaydi. Inulin ichakdagi
           bakteriyalarning sog'lom muvozanatini saqlaydi. Konjak ishtahani
@@ -74,7 +74,7 @@ const About = () => {
           antioksidant sifatida ishlaydi.
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button" onClick={openModal}>
+          <button className="secondary-button animate-pulse " onClick={openModal} >
             To'liq ma'lumot
           </button>
           <Modal
@@ -131,8 +131,8 @@ const About = () => {
               </ul>
             </div>
           </Modal>
-          <button className="watch-video-button" onClick={openModal2}>
-            <BsFillPlayCircleFill /> Vediosini ko'rish
+          <button className="watch-video-button animate-pulse" onClick={openModal2}>
+            <BsFillPlayCircleFill style={{color:"2AABEE"}} /> Vediosini ko'rish
           </button>
           <Modal
             isOpen={modalIsOpen2}
@@ -151,7 +151,7 @@ const About = () => {
               <h2 className="text-[32px] font-semibold text-center">Batafsil</h2>
               <div className=" hidden sm:block">
                 <iframe
-                  width="560"
+                  width="600"
                   height="315"
                   src="https://www.youtube.com/embed/bc_SB5cM334"
                   title="YouTube video player"

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../Assets/Logo.svg'
 import { BsCart2 } from 'react-icons/bs'
 import { HiOutlineBars3 } from 'react-icons/hi2'
@@ -19,6 +19,7 @@ import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded'
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
+
   const menuOptions = [
     {
       text: 'Asosiy',
@@ -27,12 +28,12 @@ const Navbar = () => {
     {
       text: 'Mahsulot haqida',
       icon: <InfoIcon />,
+      id:"#product"
     },
     {
       text: 'Buyurtma berish',
       icon: <ShoppingCartRoundedIcon />,
     },
-   
   ]
   return (
     <nav>
@@ -41,13 +42,15 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <a href="">Asosiy</a>
-        <a href="">Mahsulot haqida</a>
+        <a href="#product">Mahsulot haqida</a>
 
-        <a href="">
+        <a href="" >
           Buyurtma berish <BsCart2 className="navbar-cart-icon" />
         </a>
 
-        <a href="tel:+998952900001" ><button className="primary-button">+99895-290-00-01</button></a>
+        <a href="tel:+998952900001">
+          <button className="primary-button">+99895-290-00-01</button>
+        </a>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -64,13 +67,15 @@ const Navbar = () => {
               <ListItem key={item.text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
-                  
+                  <ListItemText primary={item.text} href={item.id} />
                 </ListItemButton>
-                
               </ListItem>
             ))}
-            <a href="tel:+998952900001" ><button className="primary-button flex items-center gap-8 text-gray-800 font-thin"><PhoneRoundedIcon /> +99895-290-00-01</button></a>
+            <a href="tel:+998952900001">
+              <button className="primary-button flex items-center gap-8 text-gray-800 font-thin">
+                <PhoneRoundedIcon /> +99895-290-00-01
+              </button>
+            </a>
           </List>
           <Divider />
         </Box>
