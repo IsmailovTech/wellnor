@@ -47,7 +47,7 @@ const Navbar = () => {
           Buyurtma berish <BsCart2 className="navbar-cart-icon" />
         </a>
 
-        <a href="tel:+998973891098" ><button className="primary-button">+99897-389-10-98</button></a>
+        <a href="tel:+998952900001" ><button className="primary-button">+99895-290-00-01</button></a>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
