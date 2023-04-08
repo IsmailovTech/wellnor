@@ -28,7 +28,7 @@ const Navbar = () => {
     {
       text: 'Mahsulot haqida',
       icon: <InfoIcon />,
-      id:"#product"
+      id: '#product',
     },
     {
       text: 'Buyurtma berish',
@@ -48,9 +48,9 @@ const Navbar = () => {
           Buyurtma berish <BsCart2 className="navbar-cart-icon" />
         </a>
 
-        <a href="tel:+998952900001">
+        {/* <a href="tel:+998952900001">
           <button className="primary-button">+99895-290-00-01</button>
-        </a>
+        </a> */}
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -71,11 +71,11 @@ const Navbar = () => {
                 </ListItemButton>
               </ListItem>
             ))}
-            <a href="tel:+998952900001">
+            {/* <a href="tel:+998952900001">
               <button className="primary-button flex items-center gap-8 text-gray-800 font-thin">
                 <PhoneRoundedIcon /> +99895-290-00-01
               </button>
-            </a>
+            </a> */}
           </List>
           <Divider />
         </Box>

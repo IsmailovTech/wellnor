@@ -24,7 +24,7 @@ const Footer = () => {
           {' '}
           <a href="tel:+998952900001">
             {' '}
-            <span>+998 952900001 </span>
+            {/* <span>+998 952900001 </span> */}
           </a>
           <span>http://wellnor.uz/</span>
           <span>http://wellnor.uz/</span>
